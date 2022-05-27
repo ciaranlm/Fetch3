@@ -2,3 +2,12 @@
 
 
 /* Custom styles here */
+@use "@material/button";
+
+.custom-text-button,
+.custom-outlined-button {
+  --mdc-theme-primary: #FEDBD0;
+  --mdc-theme-on-primary: #442C2E;
+
+  @include button.ink-color(#84565E);
+}
